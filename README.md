@@ -1,3 +1,5 @@
+[![Go](https://github.com/Spark-Idea/mhttp/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/Spark-Idea/mhttp/actions/workflows/go.yml)
+
 # HTTP Mock Server
 
 Runs a HTTP mock server based on endpoints specifications specified in file or standard input. A server runs on specified port or default one if not specified.
