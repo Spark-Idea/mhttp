@@ -27,11 +27,22 @@ jobs:
     - name: Build for all platforms
       run: make build-all
 
-    - name: Archive artifacts
+    - name: Artifacts for MacOS platform
       uses: actions/upload-artifact@v3
       with:
-        name: bin
-        path: |
-          bin/**
+        name: mhttp-mac
+        path: bin/mac-*
+
+    - name: Artifacts for Linux platform
+      uses: actions/upload-artifact@v3
+      with:
+        name: mhttp-linux
+        path: bin/linux-*
+
+    - name: Artifacts for Windows platform
+      uses: actions/upload-artifact@v3
+      with:
+        name: mhttp-windows
+        path: bin/win-*
 
 
